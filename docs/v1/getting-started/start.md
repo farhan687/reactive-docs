@@ -14,6 +14,23 @@ This is a quick start guide for getting up and running with your docbase project
 * has no server-side components
 * comes baked with a delightful search experience
 * is open source under an MIT License
+* 
+```js
+appbaseRef.index({
+  type: "tweet",
+  id: "aX12c5",
+  body: {
+    "msg": "writing my first tweet!",
+    "by": "jack",
+    "using": ["appbase.io", "javascript", "streams"],
+    "test": true
+  }
+}).on('data', function(res) {
+  console.log("successfully indexed: ", res);
+}).on('error', function(err) {
+  console.log("indexing error: ", err);
+})
+```
 
 ## Getting Started
 
