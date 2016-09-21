@@ -2,7 +2,6 @@
 
 This is a quick start guide for getting up and running with your docbase project.
 
-
 ## Docbase
 
 [Docbase](https://github.com/appbaseio/Docbase) turns your **markdown** documentation project into a collaborative HTML site. It:
