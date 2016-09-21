@@ -14,7 +14,9 @@ This is a quick start guide for getting up and running with your docbase project
 * has no server-side components
 * comes baked with a delightful search experience
 * is open source under an MIT License
-* 
+
+
+
 ```js
 appbaseRef.index({
   type: "tweet",
@@ -31,6 +33,8 @@ appbaseRef.index({
   console.log("indexing error: ", err);
 })
 ```
+
+
 
 ## Getting Started
 
