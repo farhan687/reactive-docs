@@ -345,6 +345,9 @@
     $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
       jWindow.on('docbase:ready', function() {
         $anchorScroll();
+        $('code').css('white-space', 'pre');
+        $('p:contains("{% raw %}")').remove();
+        $('p:contains("{% endraw %}")').remove();
         $('.content').find('pre code').each(function(i, block) {
           $(this).addClass("prettyprint");
            // hljs.highlightBlock(block);
@@ -485,8 +488,8 @@
       $scope.navbarHtml = Docbase.options.navbarHtml;
       $scope.logoSrc = Docbase.options.logoSrc;
       $scope.docbaseOptions = Docbase.options;
-      $scope.threeColumns = data.threeColumns;
-      $scope.navigationSidebar = data.navigationSidebar;
+      $scope.threeColumns = data.threeColumns ? data.threeColumns : false;
+      $scope.navigationSidebar = data.navigationSidebar ? data.navigationSidebar : true;
       var urlSplit = data.locationPath.split('/');
       var tempFolder = urlSplit[urlSplit.length-2];
       var tempFile = urlSplit[urlSplit.length-1];

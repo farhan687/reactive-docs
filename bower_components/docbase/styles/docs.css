@@ -17,14 +17,22 @@ body {
 	font-size: 1em;
 }
 
-body:not(.no-literate) .content h1 {
+body.literate .content h1 {
 	display: block;
 	width: 550px;
+}
+
+body.literate .content > p > img {
+	width: 100%;
 }
 
 .menu a.active:after {
 	top: 13px;
 	left: -15px;
+}
+
+.content table {
+	float: none;
 }
 
 .content h1,
@@ -202,6 +210,11 @@ a img {
 		left: initial !important;
 		right: 80px;
 	}
+	p img,
+	a img {
+		max-width: 100%;
+	}
+
 }
 
 li.active {
@@ -418,6 +431,11 @@ strong.li-title {
 	left: auto;
 	border-left: 1px solid #dfe2e7;
 	padding-top: 50px;
+}
+
+.rightSidebar .menu {
+	height: 100%;
+	overflow: auto;
 }
 
 .rightSidebar .other-pages {
