@@ -1,21 +1,26 @@
-# Colors
+## Search Bar: Introduction
 
-Your docs are where your users spend a significant time, they should look beautiful. Colors are baked right in docbase's design.
+### How to build a search bar with Elasticsearch?
 
-![colorful](http://appbaseio.github.io/Docbase/img/FolderGif.gif)
+This chapter provides a simple introduction and guide to building a search bar for your e-commerce app, user data, or any structured data set that is meant for keyword based queries.
 
-## Theme Color
+We will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as our search engine and the index (and dataset) is hosted on an [appbase.io](https://appbase.io) app.
 
-Docbase lets you pick color for the primary theme and automatically builds colorful docs from there.
+![](https://i.imgur.com/UNkzVkU.jpg)  
+**Image:** Search bars from popular websites
 
-Let's see how docbase would look for the color **#dd6a58**.
+### Table of Contents
 
-[![](https://i.imgur.com/yHQlaPZ.png)](http://farhan687.github.io/emberjs)
 
-A valid color can be a rgb value, hex code or even names like green, oceanblue, orangered.
+| Index     | Title    | Description |
+| ---------- | ---------- |---------|
+| 1          | [Simple Match](https://github.com/appbaseio/esc/blob/master/searchbar/simple-match.md) | How to build a simple match based search. |
+| 2       | [Multi Match](https://github.com/appbaseio/esc/blob/master/searchbar/multi-match.md) | How to search on multiple fields. |
+| 3       | [Auto Completion](https://github.com/appbaseio/esc/blob/master/searchbar/auto-complete.md) | How to add a search-as-you-type autocompletion view. |
+| 4       | [Suggestions](https://github.com/appbaseio/esc/blob/master/searchbar/suggestions.md) | How to add a search-as-you-type suggestions view. |
+| 5       | [Searchbar](https://github.com/appbaseio/esc/blob/master/searchbar/searchbar.md) | Combining all the above steps to build the search bar functionality. |
 
-## Extending
-
-While docbase comes with sensible defaults, it is also easy to extend. Beyond colors, you can create custom backgrounds, provide your own navigation or even create a custom documentation home page.
-
-[![airbnb style](https://i.imgur.com/aLuleFv.png)](http://farhan687.github.io/airbnb)
+### Live Demo
+<script async src="//jsfiddle.net/1b8tcxs4/3/embed/"></script>
+[code](https://jsfiddle.net/1b8tcxs4/3/)
+**TODO:** Embed JSFiddle demo
