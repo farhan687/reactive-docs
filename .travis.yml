@@ -5,6 +5,7 @@ branches:
   only:
   - master
 before_install:
+  - rvm install 2.x
   - gem install sass
 before_script:
 - npm install -g grunt-cli
